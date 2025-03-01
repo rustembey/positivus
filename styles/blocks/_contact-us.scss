@@ -1,0 +1,56 @@
+.contact-us{
+    position: relative;
+    padding: 24px;
+    background-color: var(--color-grey);
+    border-radius: var(--border-radius);
+   
+
+    @include mobile-above {
+        padding: 60px 100px 80px;
+        background-color: var(--color-grey);
+        border-radius: var(--border-radius-large);
+        overflow-x: hidden;
+    }
+
+    &::after {
+        --contactUsImageOffsetY: 62px;
+
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        translate: -50% -50%;
+        height: calc(100% - var(--contactUsImageOffsetY) * 2);
+        aspect-ratio: 1;
+        background: url(/images/contact-us-bg.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        @include tablet {
+            display: none;
+        }
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        
+        
+
+        @include tablet-above {
+            max-width: 556px;
+        }
+
+        @include mobile-above {
+            row-gap: 40px;
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+    }
+
+    }
