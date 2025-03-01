@@ -50,7 +50,7 @@
   
       &:focus {
         border-color: var(--color-accent);
-        box-shadow: inset;
+        box-shadow: var(--shadow);
         outline: none;
       }
   

@@ -325,6 +325,7 @@ h4, .h4 {
 }
 .field__input:focus {
   border-color: var(--color-accent);
+  box-shadow: var(--shadow);
   outline: none;
 }
 .field__input::-moz-placeholder {
@@ -1510,7 +1511,7 @@ h4, .h4 {
     flex-direction: column;
     row-gap: 22px;
     width: 100%;
-    max-width: 450px;
+    max-width: 550px;
     padding: 30px;
   }
 }
