@@ -325,7 +325,7 @@ h4, .h4 {
 }
 .field__input:focus {
   border-color: var(--color-accent);
-  box-shadow: var(--shadow);
+  box-shadow: var(--sha);
   outline: none;
 }
 .field__input::-moz-placeholder {
